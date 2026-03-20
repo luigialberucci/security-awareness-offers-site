@@ -3,125 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Security Awareness Services | Alberucci</title>
-  <meta name="description" content="Security Awareness Services für Schweizer KMU: Phishing-Simulationen, Training, KPI-Reporting und Managed Security Culture." />
+  <title>Security-Tests | Alberucci</title>
+  <meta name="description" content="Security-Tests für Unternehmen: Phishing-Simulation, Awareness-Training und klare KPI-Reports." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="bg-glow bg-glow-1"></div>
-  <div class="bg-glow bg-glow-2"></div>
-
-  <header class="nav container" id="topNav">
-    <div class="brand-wrap">
+  <header class="header" id="header">
+    <div class="shell header-inner">
       <div class="brand">Alberucci</div>
       <div class="header-title" id="headerTitle">Security-Tests</div>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#packages">Pakete</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
     </div>
-    <div class="trust-mark" title="Offizielle Alberucci Security Seite">✓ Verifiziert · Alberucci</div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#packages">Pakete</a>
-      <a href="#process">Ablauf</a>
-      <a href="#contact" class="btn btn-sm">Kontakt</a>
-    </nav>
   </header>
 
-  <section class="hero container reveal">
-    <p class="kicker">Security Awareness Services</p>
-    <h1 id="heroTitle">Security-Tests</h1>
-    <p class="lead">Wir testen kontrolliert, wie gut Teams Cyber-Angriffe erkennen, trainieren gezielt Schwachstellen und liefern klare KPI-Reports für Management und IT.</p>
-    <div class="hero-cta">
-      <a class="btn" href="#packages">Angebote ansehen</a>
-      <a class="btn btn-ghost" href="#contact">Pilot starten</a>
-    </div>
-    <div class="kpi-grid">
-      <div class="kpi-item"><h3>Click Rate</h3><p>Wie viele klicken auf simulierte Angriffe?</p></div>
-      <div class="kpi-item"><h3>Report Rate</h3><p>Wie viele melden verdächtige Mails korrekt?</p></div>
-    </div>
-  </section>
-
-  <section id="services" class="container section reveal">
-    <h2>Was du anbieten kannst</h2>
-    <div class="card-grid">
-      <div class="card tilt">
-        <h3>Phishing Simulationen</h3>
-        <p>Realistische, kontrollierte Kampagnen mit Debrief-Seite statt Credential-Erfassung.</p>
+  <main>
+    <section class="hero" id="hero">
+      <div class="shell hero-inner reveal">
+        <p class="eyebrow">Security Awareness Services</p>
+        <h1 id="heroTitle">Security-Tests</h1>
+        <p class="lead">Wir testen kontrolliert, wie gut Teams Cyber-Angriffe erkennen, trainieren gezielt Schwachstellen und liefern klare KPI-Reports für Management und IT.</p>
+        <div class="cta-row">
+          <a class="btn" href="#packages">Angebote ansehen</a>
+          <a class="btn btn-ghost" href="#contact">Pilot starten</a>
+        </div>
       </div>
-      <div class="card tilt">
-        <h3>Micro-Trainings</h3>
-        <p>Kurze, praxisnahe Sessions für Teams: Erkennen, Melden, richtig reagieren.</p>
+    </section>
+
+    <section class="section reveal" id="services">
+      <div class="shell">
+        <h2>Was du anbieten kannst</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Phishing Simulationen</h3>
+            <p>Realistische, kontrollierte Kampagnen mit Debrief-Seite statt Credential-Erfassung.</p>
+          </div>
+          <div class="card">
+            <h3>Micro-Trainings</h3>
+            <p>Kurze, praxisnahe Sessions für Teams: Erkennen, Melden, richtig reagieren.</p>
+          </div>
+          <div class="card">
+            <h3>Management Reporting</h3>
+            <p>Executive Summary mit KPI-Trends, Risikogruppen und 30/60/90-Tage-Massnahmenplan.</p>
+          </div>
+        </div>
       </div>
-      <div class="card tilt">
-        <h3>Management Reporting</h3>
-        <p>Executive Summary mit KPI-Trends, Risikogruppen und 30/60/90-Tage-Massnahmenplan.</p>
+    </section>
+
+    <section class="section reveal" id="packages">
+      <div class="shell">
+        <h2>Angebotspakete</h2>
+        <p class="sub">Preise in CHF, anpassbar nach Mitarbeiterzahl und Scope.</p>
+        <div class="grid grid-3">
+          <div class="card pricing">
+            <p class="plan">Basic</p>
+            <h3>Phishing Baseline</h3>
+            <p class="price">CHF 1'490 <span>einmalig</span></p>
+            <ul>
+              <li>Kickoff (60 Min)</li>
+              <li>1 simulierte Kampagne</li>
+              <li>Debrief nach Klick</li>
+            </ul>
+          </div>
+          <div class="card pricing featured">
+            <p class="badge">Empfohlen</p>
+            <p class="plan">Pro</p>
+            <h3>Awareness Improvement</h3>
+            <p class="price">CHF 3'900 <span>/ 3 Monate</span></p>
+            <ul>
+              <li>3 Kampagnen (monatlich)</li>
+              <li>Zielgruppen-Segmentierung</li>
+              <li>3 Micro-Trainings</li>
+            </ul>
+          </div>
+          <div class="card pricing">
+            <p class="plan">Managed</p>
+            <h3>Security Culture</h3>
+            <p class="price">ab CHF 890 <span>/ Monat</span></p>
+            <ul>
+              <li>1–2 Kampagnen pro Monat</li>
+              <li>Quartals-Management-Report</li>
+              <li>Ad-hoc Beratung</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="packages" class="container section reveal">
-    <h2>Angebotspakete</h2>
-    <p class="sub">Preise in CHF, anpassbar nach Mitarbeiterzahl und Scope.</p>
-    <div class="pricing-grid">
-      <article class="price-card">
-        <p class="plan">Basic</p>
-        <h3>Phishing Baseline</h3>
-        <p class="price">CHF 1'490 <span>einmalig</span></p>
-        <ul>
-          <li>Kickoff (60 Min)</li>
-          <li>1 simulierte Kampagne</li>
-          <li>Debrief nach Klick</li>
-          <li>Ergebnisbericht + Abschlusscall</li>
-        </ul>
-      </article>
+    <section class="section reveal" id="contact">
+      <div class="shell center card contact-card">
+        <h2>Pilot für dein Unternehmen starten</h2>
+        <p class="sub">30 Minuten Security Readiness Call. Danach erhältst du ein konkretes Pilot-Angebot.</p>
+        <a class="btn" href="mailto:info@alberucci.ch?subject=Security%20Awareness%20Pilot">Jetzt Termin anfragen</a>
+      </div>
+    </section>
+  </main>
 
-      <article class="price-card featured">
-        <p class="badge">Empfohlen</p>
-        <p class="plan">Pro</p>
-        <h3>Awareness Improvement</h3>
-        <p class="price">CHF 3'900 <span>/ 3 Monate</span></p>
-        <ul>
-          <li>3 Kampagnen (monatlich)</li>
-          <li>Zielgruppen-Segmentierung</li>
-          <li>3 Micro-Trainings</li>
-          <li>Baseline vs. Endstand KPI</li>
-        </ul>
-      </article>
-
-      <article class="price-card">
-        <p class="plan">Managed</p>
-        <h3>Security Culture</h3>
-        <p class="price">ab CHF 890 <span>/ Monat</span></p>
-        <ul>
-          <li>1–2 Kampagnen pro Monat</li>
-          <li>Quartals-Management-Report</li>
-          <li>Trendanalyse + Risikogruppen</li>
-          <li>Ad-hoc Beratung bei Vorfällen</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-
-  <section id="process" class="container section reveal">
-    <h2>So läuft ein Projekt ab</h2>
-    <div class="timeline">
-      <div><span>01</span><p>Baseline & Scope</p></div>
-      <div><span>02</span><p>Kampagne live</p></div>
-      <div><span>03</span><p>Debrief & Training</p></div>
-      <div><span>04</span><p>Retest & KPI Vergleich</p></div>
-      <div><span>05</span><p>Executive Report</p></div>
-    </div>
-  </section>
-
-  <section id="contact" class="container section contact reveal">
-    <h2>Pilot für dein Unternehmen starten</h2>
-    <p>30 Minuten Security Readiness Call. Danach erhältst du ein konkretes Pilot-Angebot.</p>
-    <a class="btn" href="mailto:info@alberucci.ch?subject=Security%20Awareness%20Pilot">Jetzt Termin anfragen</a>
-  </section>
-
-  <footer class="container footer">
-    <p>© Alberucci · Security Awareness Services · Schweiz</p>
+  <footer class="footer">
+    <div class="shell center">© Alberucci · Security Awareness Services · Schweiz</div>
   </footer>
 
   <script src="script.js"></script>
