@@ -32,7 +32,24 @@ body {
   display: flex; justify-content: space-between; align-items: center;
   gap: 12px;
 }
+.brand-wrap { display:flex; align-items:center; gap:10px; min-width: 0; }
 .brand { font-weight: 700; letter-spacing: .2px; }
+.header-title {
+  font-size: 13px;
+  color: #1f4ea3;
+  background: #edf3ff;
+  border: 1px solid #c8d8f6;
+  border-radius: 999px;
+  padding: 4px 9px;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: all .25s ease;
+  pointer-events: none;
+}
+.nav.scrolled .header-title {
+  opacity: 1;
+  transform: translateY(0);
+}
 .trust-mark {
   font-size: 12px;
   color: #1d4f9f;
@@ -75,10 +92,10 @@ body {
 .kpi-grid {
   margin-top: 28px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0,1fr));
+  grid-template-columns: repeat(2, minmax(0,1fr));
   gap: 12px;
 }
-.kpi-grid article {
+.kpi-item {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -92,7 +109,7 @@ h2 { font-size: clamp(28px,4vw,42px); margin: 0 0 10px; }
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
+  grid-template-columns: repeat(3, minmax(0,1fr));
   gap: 12px;
 }
 .card {
