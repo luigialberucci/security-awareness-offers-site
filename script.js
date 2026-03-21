@@ -12,17 +12,17 @@ const heroTitle = document.getElementById('heroTitle');
 
 function handleScroll() {
   const y = window.scrollY || window.pageYOffset;
-  const trigger = hero ? hero.offsetHeight * 0.22 : 120;
+  const trigger = hero ? hero.offsetHeight * 0.34 : 180;
 
-  if (y > 8) header.classList.add('scrolled');
+  if (y > 6) header.classList.add('scrolled');
   else header.classList.remove('scrolled');
 
-  // Smooth shrink/fade effect on hero title while scrolling
+  // Hero title shrinks and visually "moves" toward the header
   if (heroTitle) {
     const p = Math.max(0, Math.min(1, y / trigger));
-    const scale = 1 - p * 0.22;
-    const opacity = 1 - p * 0.35;
-    const translate = -p * 14;
+    const scale = 1 - p * 0.36;
+    const opacity = 1 - p * 0.9;
+    const translate = -p * 72;
     heroTitle.style.transform = `translateY(${translate}px) scale(${scale})`;
     heroTitle.style.opacity = opacity.toString();
   }
